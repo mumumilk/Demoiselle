@@ -1,0 +1,20 @@
+Product backlog
+
+R1 - Desenvolver Autenticação. 
+Roles: Clientes, Agências de viagem, Administradores de Voos,
+Administrador geral pode atribuir role
+
+R2 - Auto cadastro no sistema
+
+R3 - Busca de voo no site
+
+R4 - Cliente pode adquirir passagem
+
+R4.1 - Fluxo normal - ida/volta 
+R4.2 - Com cupom promocional
+R4.3 - Com milhagem
+
+
+R5 - Não autorizar pela lei.
+
+
