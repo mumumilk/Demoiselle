@@ -1,6 +1,6 @@
-Product backlog
+﻿Product backlog
 
-R1 - Desenvolver Sistemas de Autenticação. 
+R1 - Desenvolverrr Sistemas de Autenticação. 
 Roles: Clientes, Agências de viagem, Administradores de Voos  (AV),atendentes
 Administrador geral (pode cadastrar todos os demais e atribuir papéis)
 - Desenvolver CRUD de usuários e Roles.
