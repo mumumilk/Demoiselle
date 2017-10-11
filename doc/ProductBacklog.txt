@@ -1,20 +1,94 @@
 Product backlog
 
-R1 - Desenvolver Autenticação. 
-Roles: Clientes, Agências de viagem, Administradores de Voos,
-Administrador geral pode atribuir role
+R1 - Desenvolver Sistemas de Autenticação. 
+Roles: Clientes, Agências de viagem, Administradores de Voos  (AV),atendentes
+Administrador geral (pode cadastrar todos os demais e atribuir papéis)
+- Desenvolver CRUD de usuários e Roles.
 
-R2 - Auto cadastro no sistema
+R2 - Auto cadastro de clientes no sistema
+R2.1 Recuperar senha
 
-R3 - Busca de voo no site
+R3 - CRUD aeroportos - somente AV
+- coordenadas
+- a distancia deve ser calculada automaticamente
 
-R4 - Cliente pode adquirir passagem
+R4 - CRUD aeronaves - somente AV
+- capacidade de passageiros
+- assentos (conforto, convencional, saídas de emergencia, etc)
 
-R4.1 - Fluxo normal - ida/volta 
-R4.2 - Com cupom promocional
-R4.3 - Com milhagem
+R5 - CRUD Rotas - somente AV
+- aeroporto origem/destino 
+- aeronaves possíveis
+
+R6 - Gerenciamento de VOOS - somente AV
+- associar rota, aeronave, data/hora de embarque, cardápio de voo
+
+R7 - Cadastrar cardápio de voo
+- cadastrar conjunto de alimentação
+- voos curtos
+- voos com + de 2 horas de voo
+- voos com + de 5 horas de voo
+
+R8 - Busca de voos
+- Selecionar aeroporto de origem/destino  e datas
+- opção de ida ou ida/volta ou multitrechos
+- opção de datas aproximadas
+
+R9 - Efetuar aquisição de passagem
+- informar passaporte/cpf do passageiro.
+- se menor de idade, informar as leis vigentes.
+- se houver restrição legal o sistema deve informar
+- informar cartão de crédito
+- informar código promocional, código do programa de milhagem (cpf)
+- informar aquisição de pacotes (escolha do assento antecipado ou com conforto)
+- informar pagamento (cartão de credito, boleto)
+
+R10 - Gerar boleto para pagamento da compra
 
 
-R5 - Não autorizar pela lei.
+R11 - Efetuar check-in
+- escolher assento, se necessário
+- Imprimir cartão de embarque (versão web e/ou pdf)
+- adicionar milhagem no cpf/passaporte do cliente
+Ex: Distancia: 536 km
+536 / 1.5 = 357,33
+Preço 350,00 * 0.1% = 0.35
+Milhas 0.35 * 357,33 = 125.
 
+R12 - Despachar malas (atendente)
+- gerar etiquetas
+- registrar status: esteira, embarque, avião x, transferencia, avião y, desenbarque, esteira
+
+R13 - Rastrear malhas
+- permitir o cliente identificar onde as malas estão
+
+
+R14 - Criar pacotes promocionais - somente AV
+
+R15 - Adquirir pacotes promocionais
+
+R16 - Criar interface para sistema externo informar se o cliente possui restrições legais
+- desenvolver um aplicativo de teste
+
+R17 - Notificar usuário em caso de cancelamento ou remarcação do voo
+
+R18 - Possibilitar o AV alterar aeronave
+- alocar aeronave maior/menor, de acordo com aquisições de passagem
+
+R19 - Possibilitar AV cancelar voo
+- justificar o motivo
+
+R20 - Possibilitar venda da passagem por meio de sistema externo
+- desenvolver WebService
+- desenvolver sistema para teste
+
+R21 - Criar site principal para clientes (site principal da empresa)
+
+R22 - Gerenciar quais promoções e banners devem ser exibidos no site principal (somente av)
+
+R23 - Sistema de atendimento por chat
+
+R24 - Permitir remarcação de voo (adiantar voo) - atendente
+
+R25 - 
 
