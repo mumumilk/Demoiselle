@@ -90,5 +90,5 @@ R23 - Sistema de atendimento por chat
 
 R24 - Permitir remarcação de voo (adiantar voo) - atendente
 
-R25 - 
+R25 - Fretamento - um cliente pode fretar uma aeronave (um voo), configurar rota e horário de partida
 
