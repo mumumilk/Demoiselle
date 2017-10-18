@@ -6,7 +6,12 @@ R1 - Desenvolver Sistemas de Autenticação.
 Todo usuário no primeiro acesso terá que se autenticar no sistema informando Nome completo, CPF, RG, endereço completo, telefones
 e email para contato.
 BD:
-cliente(idcliente, nome, sobrenome, cpf, rg, endereco, telefone, email)
+cliente(id_cliente, nome, sobrenome, cpf, rg, endereco, telefone, email)
+BD:
+atendente(id_atendente, nome, sobrenome, cpf, rg, telefone, endereco, email)
+BD:
+agencia(id_agencia, nome, endereco, cnpj, telefone, email)
+
 Roles: Clientes, Agencias de viagem, Administradores de Voos  (AV),atendentes
 Administrador geral (pode cadastrar todos os demais e atribuir papeis)
 - Desenvolver CRUD de usuários e Roles.
