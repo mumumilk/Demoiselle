@@ -58,6 +58,10 @@ Milhas 0.35 * 357,33 = 125.
 R12 - Despachar malas (atendente)
 - gerar etiquetas
 - registrar status: esteira, embarque, avião x, transferencia, avião y, desenbarque, esteira
+* Despache de bagagem
+* O atendende deve gerar etiquedas para cada bagagem, além de registrar no sistema o status da mesma.
+* BD: Bagagem(idPassageiro, NumEsteira, NumEmbarque, NumAviao, NumDesenbarque) 
+
 
 R13 - Rastrear malhas
 - permitir o cliente identificar onde as malas estão
@@ -91,4 +95,6 @@ R23 - Sistema de atendimento por chat
 R24 - Permitir remarcação de voo (adiantar voo) - atendente
 
 R25 - Fretamento - um cliente pode fretar uma aeronave (um voo), configurar rota e horário de partida
+
+
 
