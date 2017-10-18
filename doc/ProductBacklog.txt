@@ -46,17 +46,17 @@ R9 - Efetuar aquisiÃ§Ã£o de passagem
 R10 - Gerar boleto para pagamento da compra
 
 
-R11 – Realizar check-in
-Após efetuar o login no sistema, o usuário deve informar o seu localizador e seu CPF. Com a identificação feita no avião, ele pode escolher, ou não, se gostaria de levar mais bagagem acima do padrão. Finalizando, ele deve escolher o assento de sua preferência (desde que esteja vazio). Após check-in realizado, adicionar milhagem ao cliente através da seguinte equação.  
+R11 ï¿½ Realizar check-in
+Apï¿½s efetuar o login no sistema, o usuï¿½rio deve informar o seu localizador e seu CPF. Com a identificaï¿½ï¿½o feita no aviï¿½o, ele pode escolher, ou nï¿½o, se gostaria de levar mais bagagem acima do padrï¿½o. Finalizando, ele deve escolher o assento de sua preferï¿½ncia (desde que esteja vazio). Apï¿½s check-in realizado, adicionar milhagem ao cliente atravï¿½s da seguinte equaï¿½ï¿½o.  
 Ex: Distancia: 536 km
 536 / 1.5 = 357,33
-Preço 350,00 * 0.1% = 0.35
+Preï¿½o 350,00 * 0.1% = 0.35
 Milhas 0.35 * 357,33 = 125.
 BD:
-Cliente (idCliente, cpf, passaporte, nome, endereço, idBagagem, milhagem)
+Cliente (idCliente, cpf, passaporte, nome, endereï¿½o, idBagagem, milhagem)
 Bagageiro (idBagagem, idCliente, compartimentoMala*, valorTotal)
-*comparimentoMala seria o local/"armário" que estariam guardadas as malas.
-Avião (idAviao, nomeAvião, assentosDisponiveis, origem, destino, idCliente, idBagagem)
+*comparimentoMala seria o local/"armï¿½rio" que estariam guardadas as malas.
+Aviï¿½o (idAviao, nomeAviï¿½o, assentosDisponiveis, origem, destino, idCliente, idBagagem)
 
 
 R12 - Despachar malas (atendente)
@@ -89,6 +89,18 @@ R19 - Possibilitar AV cancelar voo
 R20 - Possibilitar venda da passagem por meio de sistema externo
 - desenvolver WebService
 - desenvolver sistema para teste
+Rafael PantalÃ£o  Lionardo 
+
+ApÃ³s efetuar o login, o cliente pode selecionar compra de passagem
+
+BD:
+
+cliente (idcliente, cpf, passaporte, nome, endereco, sexo, idade,email)
+
+voo(idBanco,Classe, nomeDestino, horarioDestino,nomeSaida,horarioSaida)
+
+
+
 
 R21 - Criar site principal para clientes (site principal da empresa)
 
