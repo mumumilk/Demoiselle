@@ -2,6 +2,11 @@
 ï»¿Product backlog
 
 R1 - Desenvolver Sistemas de Autenticação. 
+
+Todo usuário no primeiro acesso terá que se autenticar no sistema informando Nome completo, CPF, RG, endereço completo, telefones
+e email para contato.
+BD:
+cliente(idcliente, nome, sobrenome, cpf, rg, endereco, telefone, email)
 Roles: Clientes, Agencias de viagem, Administradores de Voos  (AV),atendentes
 Administrador geral (pode cadastrar todos os demais e atribuir papeis)
 - Desenvolver CRUD de usuários e Roles.
