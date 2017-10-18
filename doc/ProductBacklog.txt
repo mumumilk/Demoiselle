@@ -3,7 +3,7 @@
 
 R1 - Desenvolver Sistemas de Autenticação. 
 Roles: Clientes, Agencias de viagem, Administradores de Voos  (AV),atendentes
-Administrador geral (pode cadastrar todos os demais e atribuir papÃ©is)
+Administrador geral (pode cadastrar todos os demais e atribuir papeis)
 - Desenvolver CRUD de usuários e Roles.
 
 R2 - Auto cadastro de clientes no sistema
