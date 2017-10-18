@@ -16,9 +16,11 @@ R4 - CRUD aeronaves - somente AV
 - capacidade de passageiros
 - assentos (conforto, convencional, saÃ­das de emergencia, etc)
 
-R5 - CRUD Rotas - somente AV
-- aeroporto origem/destino 
-- aeronaves possÃ­veis
+R5- CRUD de Rotas de avião
+ O sistema deve ser capaz de armazenar dados sobre o voo do usuário assim como hora, local de saída, destino e aeronaves disponíveis 
+para levantar voo. E também deve ser possível editar esses dados, remover uma rota de um voo e também deletar.
+DB:
+ Routes (origin_route, destiny_route, airship_available, date, hour)
 
 R6 - Gerenciamento de VOOS - somente AV
 - associar rota, aeronave, data/hora de embarque, cardÃ¡pio de voo
