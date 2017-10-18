@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ï»¿Product backlog
 
 R1 - Desenvolver Sistemas de AutenticaÃ§Ã£o. 
@@ -108,3 +109,117 @@ R25 - Fretamento - um cliente pode fretar uma aeronave (um voo), configurar rota
 
 
 
+=======
+ï»¿Product backlog
+
+R1 - Desenvolver Sistemas de AutenticaÃ§Ã£o. 
+Roles: Clientes, AgÃªncias de viagem, Administradores de Voos  (AV),atendentes
+Administrador geral (pode cadastrar todos os demais e atribuir papÃ©is)
+- Desenvolver CRUD de usuÃ¡rios e Roles.
+
+R2 - Auto cadastro de clientes no sistema
+R2.1 Recuperar senha
+
+R3 - CRUD aeroportos - somente AV
+- coordenadas--Ira informar as coordenadas em longitude e latitude
+- a distancia deve ser calculada automaticamente
+BD
+coordenada(latitude, longitude)
+distancia(localA, localB, aux)
+
+
+
+
+R4 - CRUD aeronaves - somente AV
+- capacidade de passageiros
+- assentos (conforto, convencional, saÃ­das de emergencia, etc)
+
+R5- CRUD de Rotas de avião
+ O sistema deve ser capaz de armazenar dados sobre o voo do usuário assim como hora, local de saída, destino e aeronaves disponíveis 
+para levantar voo. E também deve ser possível editar esses dados, remover uma rota de um voo e também deletar.
+DB:
+ Routes (origin_route, destiny_route, airship_available, date, hour)
+
+R6 - Gerenciamento de VOOS - somente AV
+- associar rota, aeronave, data/hora de embarque, cardÃ¡pio de voo
+
+R7 - Cadastrar cardÃ¡pio de voo
+- cadastrar conjunto de alimentaÃ§Ã£o
+- voos curtos
+- voos com + de 2 horas de voo
+- voos com + de 5 horas de voo
+
+R8 - Busca de voos
+- Selecionar aeroporto de origem/destino  e datas
+- opÃ§Ã£o de ida ou ida/volta ou multitrechos
+- opÃ§Ã£o de datas aproximadas
+
+R9 - Efetuar aquisiÃ§Ã£o de passagem
+- informar passaporte/cpf do passageiro.
+- se menor de idade, informar as leis vigentes.
+- se houver restriÃ§Ã£o legal o sistema deve informar
+- informar cartÃ£o de crÃ©dito
+- informar cÃ³digo promocional, cÃ³digo do programa de milhagem (cpf)
+- informar aquisiÃ§Ã£o de pacotes (escolha do assento antecipado ou com conforto)
+- informar pagamento (cartÃ£o de credito, boleto)
+
+R10 - Gerar boleto para pagamento da compra
+
+
+R11 – Realizar check-in
+Após efetuar o login no sistema, o usuário deve informar o seu localizador e seu CPF. Com a identificação feita no avião, ele pode escolher, ou não, se gostaria de levar mais bagagem acima do padrão. Finalizando, ele deve escolher o assento de sua preferência (desde que esteja vazio). Após check-in realizado, adicionar milhagem ao cliente através da seguinte equação.  
+Ex: Distancia: 536 km
+536 / 1.5 = 357,33
+Preço 350,00 * 0.1% = 0.35
+Milhas 0.35 * 357,33 = 125.
+BD:
+Cliente (idCliente, cpf, passaporte, nome, endereço, idBagagem, milhagem)
+Bagageiro (idBagagem, idCliente, compartimentoMala*, valorTotal)
+*comparimentoMala seria o local/"armário" que estariam guardadas as malas.
+Avião (idAviao, nomeAvião, assentosDisponiveis, origem, destino, idCliente, idBagagem)
+
+
+R12 - Despachar malas (atendente)
+- gerar etiquetas
+- registrar status: esteira, embarque, aviÃ£o x, transferencia, aviÃ£o y, desenbarque, esteira
+* Despache de bagagem
+* O atendende deve gerar etiquedas para cada bagagem, alÃ©m de registrar no sistema o status da mesma.
+* BD: Bagagem(idPassageiro, NumEsteira, NumEmbarque, NumAviao, NumDesenbarque) 
+
+
+R13 - Rastrear malhas
+- permitir o cliente identificar onde as malas estÃ£o
+
+
+R14 - Criar pacotes promocionais - somente AV
+
+R15 - Adquirir pacotes promocionais
+
+R16 - Criar interface para sistema externo informar se o cliente possui restriÃ§Ãµes legais
+- desenvolver um aplicativo de teste
+
+R17 - Notificar usuÃ¡rio em caso de cancelamento ou remarcaÃ§Ã£o do voo
+
+R18 - Possibilitar o AV alterar aeronave
+- alocar aeronave maior/menor, de acordo com aquisiÃ§Ãµes de passagem
+
+R19 - Possibilitar AV cancelar voo
+- justificar o motivo
+
+R20 - Possibilitar venda da passagem por meio de sistema externo
+- desenvolver WebService
+- desenvolver sistema para teste
+
+R21 - Criar site principal para clientes (site principal da empresa)
+
+R22 - Gerenciar quais promoÃ§Ãµes e banners devem ser exibidos no site principal (somente av)
+
+R23 - Sistema de atendimento por chat
+
+R24 - Permitir remarcaÃ§Ã£o de voo (adiantar voo) - atendente
+
+R25 - Fretamento - um cliente pode fretar uma aeronave (um voo), configurar rota e horÃ¡rio de partida
+
+
+
+>>>>>>> 005dad63e0957cb29cc54b0c07abe8d72c40957f
