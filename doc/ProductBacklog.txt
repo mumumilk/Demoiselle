@@ -15,8 +15,12 @@ R2 - Auto cadastro de clientes no sistema
 R2.1 Recuperar senha
 
 R3 - CRUD aeroportos - somente AV
-- coordenadas
+- coordenadas--Ira informar as coordenadas em longitude e latitude
 - a distancia deve ser calculada automaticamente
+BD
+coordenada(latitude, longitude)
+distancia(localA, localB, aux) 
+
 
 R4 - CRUD aeronaves - somente AV
 - capacidade de passageiros
