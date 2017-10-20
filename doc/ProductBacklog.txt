@@ -38,6 +38,14 @@ R7 - Cadastrar cardÃ¡pio de voo
 - voos curtos
 - voos com + de 2 horas de voo
 - voos com + de 5 horas de voo
+O sistema tera a funcionalidade de cadastrar o cardapio do voo podendo cadastrar cardapios diferentes para cada tipo de voo,
+na area de cadastro de cardapio o funcionario tera que inserir o nome dos alimentos e o tipo do voo, 
+por exemplo: voo cursto serão do tipo A,
+	voo com + de 2 horas de duração serão do tipo B,
+	voo com + de 2 horas de duração serão do tipo C
+DB:
+cardapio (id, tipoVoo)
+alimento (id, idCardapio, nome)
 
 R8 - Busca de voos
 - Selecionar aeroporto de origem/destino  e datas
@@ -177,6 +185,14 @@ R7 - Cadastrar cardÃ¡pio de voo
 - voos curtos
 - voos com + de 2 horas de voo
 - voos com + de 5 horas de voo
+O sistema tera a funcionalidade de cadastrar o cardapio do voo podendo cadastrar cardapios diferentes para cada tipo de voo,
+na area de cadastro de cardapio o funcionario tera que inserir o nome dos alimentos e o tipo do voo, 
+por exemplo: voo cursto serão do tipo A,
+	voo com + de 2 horas de duração serão do tipo B,
+	voo com + de 2 horas de duração serão do tipo C
+DB:
+cardapio (id, tipoVoo)
+alimento (id, idCardapio, nome)
 
 R8 - Busca de voos
 - Selecionar aeroporto de origem/destino  e datas
