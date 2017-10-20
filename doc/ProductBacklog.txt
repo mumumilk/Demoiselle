@@ -53,8 +53,14 @@ R9 - Efetuar aquisiÃ§Ã£o de passagem
 - informar aquisiÃ§Ã£o de pacotes (escolha do assento antecipado ou com conforto)
 - informar pagamento (cartÃ£o de credito, boleto)
 
-R10 - Gerar boleto para pagamento da compra
-
+R10 - Gerar boleto para pagamento da compra	
+ Após o cliente escolher o modo de pagamento via boleto e finalizar a compra da passagem, o sistema deverá mostrar
+ um botão para visualizar o boleto. Após clicar no botão, o boleto será gerado e renderizado na tela do usuário.
+ BD: 
+ cliente (idcliente, cpf, passaporte, nome, endereco)
+ pagamento(idpagamento, idformapagamento, idcliente, data, hora)
+ boleto (idboleto, idpagamento, codbarras, codbanco, vencimento, nossonumero, valor, carteira, datadocumento)
+ 
 
 R11 ï¿½ Realizar check-in
 Apï¿½s efetuar o login no sistema, o usuï¿½rio deve informar o seu localizador e seu CPF. Com a identificaï¿½ï¿½o feita no aviï¿½o, ele pode escolher, ou nï¿½o, se gostaria de levar mais bagagem acima do padrï¿½o. Finalizando, ele deve escolher o assento de sua preferï¿½ncia (desde que esteja vazio). Apï¿½s check-in realizado, adicionar milhagem ao cliente atravï¿½s da seguinte equaï¿½ï¿½o.  
