@@ -6,12 +6,7 @@ R1 - Desenvolver Sistemas de Autenticação.
 Todo usuário no primeiro acesso terá que se autenticar no sistema informando Nome completo, CPF, RG, endereço completo, telefones
 e email para contato.
 BD:
-cliente(id_cliente, nome, sobrenome, cpf, rg, endereco, telefone, email)
-BD:
-atendente(id_atendente, nome, sobrenome, cpf, rg, telefone, endereco, email)
-BD:
-agencia(id_agencia, nome, endereco, cnpj, telefone, email)
-
+cliente(idcliente, nome, sobrenome, cpf, rg, endereco, telefone, email)
 Roles: Clientes, Agencias de viagem, Administradores de Voos  (AV),atendentes
 Administrador geral (pode cadastrar todos os demais e atribuir papeis)
 - Desenvolver CRUD de usuários e Roles.
@@ -114,8 +109,10 @@ R17 - Notificar usuÃ¡rio em caso de cancelamento ou remarcaÃ§Ã£o do voo
 R18 - Possibilitar o AV alterar aeronave
 - alocar aeronave maior/menor, de acordo com aquisiÃ§Ãµes de passagem
 
-R19 - Possibilitar AV cancelar voo
-- justificar o motivo
+R19 - Cancelamento de Voo
+ O sistema deve permitir ao AV cancelar o voo após ele ter efetuado o login, deve ser feito uma observação por qual motivo o voo foi   cancelado.
+ BD: atendenteVoo (idAtend, nomeAtend, senhaAtend);
+     voo (idVoo, destino, horarioSaida, horarioChegada, observacao, idPiloto, idAeronave, idPassageiro);
 
 R20 - Possibilitar venda da passagem por meio de sistema externo
 - desenvolver WebService
