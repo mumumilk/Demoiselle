@@ -246,7 +246,22 @@ R21 - Criar site principal para clientes (site principal da empresa)
 
 R22 - Gerenciar quais promoÃ§Ãµes e banners devem ser exibidos no site principal (somente av)
 
+================================================
+
 R23 - Sistema de atendimento por chat
+
+-O sistema de atendimento por chat, tem como objetivo auxiliar o usuário no esclarecimento de dúvidas.
+-O usuário deve estar logado no sistema. Após o login, o usuário irá procurar a seção de "ajuda", e um dos funcionários
+irá antendê-lo.
+-Por motivos de segurança, todas as conversas serão gravadas juntamente aos ids do usuário e funcionário, a data e o horário.
+
+Estrutra do Banco de Dados:
+-cliente( idCliente, nome, cpf, passaporte, endereco, idade, telefone);
+-logChat( idChat, idCliente, idFuncionario, data, hora);
+-chat( idChat, data, hora, conteúdo); 
+
+================================================
+
 
 R24 - Permitir remarcaÃ§Ã£o de voo (adiantar voo) - atendente
 
