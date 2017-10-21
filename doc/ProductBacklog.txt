@@ -32,6 +32,16 @@ R5 - CRUD Rotas - somente AV
 
 R6 - Gerenciamento de VOOS - somente AV
 - associar rota, aeronave, data/hora de embarque, cardÃ¡pio de voo
+O sistema terá a funcionalidade de cadastrar rotas informando a aeronave, data e hora do embarque para que seja apresentada no cardapio de voos, por exemplo:
+    Rota: Londrina - Curitiba,
+    Aeronave: Boeing 770,
+    Data/Hora: 10/12/2017 às 12h.
+DB 
+    Pais(id, nome, abreviatura)
+    Estado(id, nome, uf, id_pais)
+    Cidade(id, nome, id_estado)
+    Aeronave(id, nome, modelo, ano)
+    Rota(id_cidade_origem, id_cidade_destino, id_aeronave, data)
 
 R7 - Cadastrar cardÃ¡pio de voo
 - cadastrar conjunto de alimentaÃ§Ã£o
