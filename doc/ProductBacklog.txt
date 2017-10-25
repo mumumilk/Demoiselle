@@ -10,8 +10,12 @@ Roles: Clientes, Agencias de viagem, Administradores de Voos  (AV),atendentes
 Administrador geral (pode cadastrar todos os demais e atribuir papeis)
 - Desenvolver CRUD de usuários e Roles.
 
-R2 - Auto cadastro de clientes no sistema
-R2.1 Recuperar senha
+R2 - Os clientes serão cadastrados no sistema de forma automática assim que o mesmo efetuar a compra de uma passagem. O cadastro ficará armazenado no sistema pelo período de 1 ano, após esse tempo o registro será inativado no sistema e setado como removido no banco de dados. Caso o cliente realize a compra de uma nova passagem após o período de 1 ano, seu registro será reativado no sistema e reinserido no banco de dados. Durante o primeiro login no sistema o cliente deverá confirmar seus dados e escolher uma senha, após escolher sua senha ele poderá logar no sistema utilizando seu email e senha.
+R2.1- Caso o usuário queira recuperar sua senha o mesmo deverá clicar na opção "Esqueci minha senha", após isso o sistema irá disparar um email para recuperação de senha. Após confirmar o email o usuário terá a opção de escolher uma nova senha. Será guardado no banco de dados um hash da senha.
+
+BD:
+cliente (id, cpf, rg, passaporte, nome_cliente, endereco, email)
+cliente_login(id_cliente,password)
 
 R3 - CRUD aeroportos - somente AV
 - coordenadas--Ira informar as coordenadas em longitude e latitude
