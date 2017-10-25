@@ -1,5 +1,4 @@
-﻿<<<<<<< HEAD
-ï»¿Product backlog
+Product backlog
 
 R1 - Desenvolver Sistemas de Autenticação. 
 
