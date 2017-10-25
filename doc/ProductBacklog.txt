@@ -23,8 +23,12 @@ distancia(localA, localB, aux)
 
 
 R4 - CRUD aeronaves - somente AV
+O sistema deverá permitir registrar as aeronaves disponiveis por empresa. 
 - capacidade de passageiros
 - assentos (conforto, convencional, saÃ­das de emergencia, etc)
+BD
+aeronave(id, modelo, assentos, capacidade, empresa)
+empresa(id, nome, nome_fantasia, cnpj)
 
 R5 - CRUD Rotas - somente AV
 - aeroporto origem/destino 
