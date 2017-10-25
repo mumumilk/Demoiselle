@@ -245,7 +245,21 @@ R20 - Possibilitar venda da passagem por meio de sistema externo
 
 R21 - Criar site principal para clientes (site principal da empresa)
 
+================================================
+
 R22 - Gerenciar quais promoÃ§Ãµes e banners devem ser exibidos no site principal (somente av)
+SISTEMA
+- desenvolver espaco de banner(s) na tela principal
+- desenvolver tela de gerenciamento de banners. Essa tela deve conter:
+    - listagem de todos os banners (que ja foram, estao sendo, ou serao exibidos), junto com a data de inicio/fim de exibicao
+    - opcao de edicao de banner
+    - opcao de deletar banner 
+    - opcao de incluir banner
+
+BANCO
+O banco possui uma tabela com os dados e imagem da promocao/banner, e os que serao exibidos sao aqueles em que a data de hoje esta entre as datas de inicio e fim.
+- banners(idBanner, nome, dataInicio, dataFim, fileBlob, fileName, indRemovido, idUser)
+
 
 ================================================
 
