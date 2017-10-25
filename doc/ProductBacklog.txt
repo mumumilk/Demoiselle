@@ -33,9 +33,14 @@ BD
 aeronave(id, modelo, assentos, capacidade, empresa)
 empresa(id, nome, nome_fantasia, cnpj)
 
-R5 - CRUD Rotas - somente AV
-- aeroporto origem/destino 
-- aeronaves possÃ­veis
+R5- CRUD de Rotas de avião
+ R5.1 O administrador do sistema deve ser capaz de armazenar dados sobre o voo do usuário assim como hora, local de saída, destino e aeronaves disponíveis 
+para levantar voo. E também deve ser possível editar esses dados, remover uma rota de um voo e também deletar. Esses dados serão
+fixados até que o administrador altere novamente os dados do voo.
+ R5.2 Se os dados sobre o voo forem removidas ou deletadas os dados deverão ser desconsiderados para os usuários do sistema.
+
+DB:
+ Routes (origin_route, destiny_route, airship_available, date, hour)
 
 R6 - Gerenciamento de VOOS - somente AV
 - associar rota, aeronave, data/hora de embarque, cardÃ¡pio de voo
